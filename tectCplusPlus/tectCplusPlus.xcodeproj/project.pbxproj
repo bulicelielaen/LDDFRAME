@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021B9314E1BCC528948D9CF2 /* libPods-tectCplusPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */; };
+		1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */; };
+		9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */; };
+		A032211D1F00E38A009C85D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211C1F00E38A009C85D8 /* main.m */; };
+		A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211F1F00E38A009C85D8 /* AppDelegate.m */; };
+		A03221231F00E38A009C85D8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A03221221F00E38A009C85D8 /* ViewController.mm */; };
+		A03221261F00E38A009C85D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03221241F00E38A009C85D8 /* Main.storyboard */; };
+		A03221281F00E38A009C85D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03221271F00E38A009C85D8 /* Assets.xcassets */; };
+		A032212B1F00E38A009C85D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03221291F00E38A009C85D8 /* LaunchScreen.storyboard */; };
+		A03221361F00E38A009C85D8 /* tectCplusPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221351F00E38A009C85D8 /* tectCplusPlusTests.m */; };
+		A03221411F00E38A009C85D8 /* tectCplusPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221401F00E38A009C85D8 /* tectCplusPlusUITests.m */; };
+		A03221501F00E43F009C85D8 /* libcodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A032214F1F00E43F009C85D8 /* libcodeLibrary.a */; };
+		A03221531F00F476009C85D8 /* MyDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221521F00F476009C85D8 /* MyDrawView.m */; };
+		A03221561F010AC0009C85D8 /* LDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221551F010AC0009C85D8 /* LDCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A03221321F00E38A009C85D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A03221101F00E38A009C85D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03221171F00E38A009C85D8;
+			remoteInfo = tectCplusPlus;
+		};
+		A032213D1F00E38A009C85D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A03221101F00E38A009C85D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A03221171F00E38A009C85D8;
+			remoteInfo = tectCplusPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D1E5F7221A64DC54FA9BD0 /* Pods-tectCplusPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.release.xcconfig"; sourceTree = "<group>"; };
+		A03221181F00E38A009C85D8 /* tectCplusPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tectCplusPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A032211C1F00E38A009C85D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A032211E1F00E38A009C85D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A032211F1F00E38A009C85D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A03221211F00E38A009C85D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A03221221F00E38A009C85D8 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		A03221251F00E38A009C85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A03221271F00E38A009C85D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A032212A1F00E38A009C85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A032212C1F00E38A009C85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03221311F00E38A009C85D8 /* tectCplusPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tectCplusPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03221351F00E38A009C85D8 /* tectCplusPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tectCplusPlusTests.m; sourceTree = "<group>"; };
+		A03221371F00E38A009C85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A032213C1F00E38A009C85D8 /* tectCplusPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tectCplusPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03221401F00E38A009C85D8 /* tectCplusPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tectCplusPlusUITests.m; sourceTree = "<group>"; };
+		A03221421F00E38A009C85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A032214E1F00E39B009C85D8 /* QuiziiCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuiziiCode.h; sourceTree = "<group>"; };
+		A032214F1F00E43F009C85D8 /* libcodeLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcodeLibrary.a; sourceTree = "<group>"; };
+		A03221511F00F476009C85D8 /* MyDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDrawView.h; sourceTree = "<group>"; };
+		A03221521F00F476009C85D8 /* MyDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDrawView.m; sourceTree = "<group>"; };
+		A03221541F010AC0009C85D8 /* LDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCell.h; sourceTree = "<group>"; };
+		A03221551F010AC0009C85D8 /* LDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCell.m; sourceTree = "<group>"; };
+		B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.release.xcconfig"; sourceTree = "<group>"; };
+		E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7AE9E3123BEAED20FA243AE /* Pods-tectCplusPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F42ACF4AC158A402D81FC86B /* Pods-tectCplusPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03221151F00E38A009C85D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03221501F00E43F009C85D8 /* libcodeLibrary.a in Frameworks */,
+				9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A032212E1F00E38A009C85D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021B9314E1BCC528948D9CF2 /* libPods-tectCplusPlusTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03221391F00E38A009C85D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69EC5C6138B36DA51802E5FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */,
+				B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */,
+				F42ACF4AC158A402D81FC86B /* Pods-tectCplusPlusTests.debug.xcconfig */,
+				9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */,
+				E7AE9E3123BEAED20FA243AE /* Pods-tectCplusPlusUITests.debug.xcconfig */,
+				00D1E5F7221A64DC54FA9BD0 /* Pods-tectCplusPlusUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B2E583081B956BC519B7C08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */,
+				F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */,
+				E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A032210F1F00E38A009C85D8 = {
+			isa = PBXGroup;
+			children = (
+				A032214F1F00E43F009C85D8 /* libcodeLibrary.a */,
+				A032211A1F00E38A009C85D8 /* tectCplusPlus */,
+				A03221341F00E38A009C85D8 /* tectCplusPlusTests */,
+				A032213F1F00E38A009C85D8 /* tectCplusPlusUITests */,
+				A03221191F00E38A009C85D8 /* Products */,
+				69EC5C6138B36DA51802E5FB /* Pods */,
+				8B2E583081B956BC519B7C08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A03221191F00E38A009C85D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A03221181F00E38A009C85D8 /* tectCplusPlus.app */,
+				A03221311F00E38A009C85D8 /* tectCplusPlusTests.xctest */,
+				A032213C1F00E38A009C85D8 /* tectCplusPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A032211A1F00E38A009C85D8 /* tectCplusPlus */ = {
+			isa = PBXGroup;
+			children = (
+				A03221511F00F476009C85D8 /* MyDrawView.h */,
+				A03221521F00F476009C85D8 /* MyDrawView.m */,
+				A032214E1F00E39B009C85D8 /* QuiziiCode.h */,
+				A032211E1F00E38A009C85D8 /* AppDelegate.h */,
+				A032211F1F00E38A009C85D8 /* AppDelegate.m */,
+				A03221211F00E38A009C85D8 /* ViewController.h */,
+				A03221221F00E38A009C85D8 /* ViewController.mm */,
+				A03221541F010AC0009C85D8 /* LDCell.h */,
+				A03221551F010AC0009C85D8 /* LDCell.m */,
+				A03221241F00E38A009C85D8 /* Main.storyboard */,
+				A03221271F00E38A009C85D8 /* Assets.xcassets */,
+				A03221291F00E38A009C85D8 /* LaunchScreen.storyboard */,
+				A032212C1F00E38A009C85D8 /* Info.plist */,
+				A032211B1F00E38A009C85D8 /* Supporting Files */,
+			);
+			path = tectCplusPlus;
+			sourceTree = "<group>";
+		};
+		A032211B1F00E38A009C85D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A032211C1F00E38A009C85D8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A03221341F00E38A009C85D8 /* tectCplusPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				A03221351F00E38A009C85D8 /* tectCplusPlusTests.m */,
+				A03221371F00E38A009C85D8 /* Info.plist */,
+			);
+			path = tectCplusPlusTests;
+			sourceTree = "<group>";
+		};
+		A032213F1F00E38A009C85D8 /* tectCplusPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A03221401F00E38A009C85D8 /* tectCplusPlusUITests.m */,
+				A03221421F00E38A009C85D8 /* Info.plist */,
+			);
+			path = tectCplusPlusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A03221171F00E38A009C85D8 /* tectCplusPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03221451F00E38A009C85D8 /* Build configuration list for PBXNativeTarget "tectCplusPlus" */;
+			buildPhases = (
+				ABDC43E001BFB122799A064B /* [CP] Check Pods Manifest.lock */,
+				A03221141F00E38A009C85D8 /* Sources */,
+				A03221151F00E38A009C85D8 /* Frameworks */,
+				A03221161F00E38A009C85D8 /* Resources */,
+				7D7621951A3E857DB620964A /* [CP] Embed Pods Frameworks */,
+				82C13988F35F4F95D1300A48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tectCplusPlus;
+			productName = tectCplusPlus;
+			productReference = A03221181F00E38A009C85D8 /* tectCplusPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A03221301F00E38A009C85D8 /* tectCplusPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03221481F00E38A009C85D8 /* Build configuration list for PBXNativeTarget "tectCplusPlusTests" */;
+			buildPhases = (
+				AB9B9FE9EB5BDDD2C82BAB90 /* [CP] Check Pods Manifest.lock */,
+				A032212D1F00E38A009C85D8 /* Sources */,
+				A032212E1F00E38A009C85D8 /* Frameworks */,
+				A032212F1F00E38A009C85D8 /* Resources */,
+				198432C9F985E976B04938BA /* [CP] Embed Pods Frameworks */,
+				4D91921AEA9B60A4D0C9BA81 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03221331F00E38A009C85D8 /* PBXTargetDependency */,
+			);
+			name = tectCplusPlusTests;
+			productName = tectCplusPlusTests;
+			productReference = A03221311F00E38A009C85D8 /* tectCplusPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A032213B1F00E38A009C85D8 /* tectCplusPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A032214B1F00E38A009C85D8 /* Build configuration list for PBXNativeTarget "tectCplusPlusUITests" */;
+			buildPhases = (
+				1298DE31FFD3CA92D480D6A6 /* [CP] Check Pods Manifest.lock */,
+				A03221381F00E38A009C85D8 /* Sources */,
+				A03221391F00E38A009C85D8 /* Frameworks */,
+				A032213A1F00E38A009C85D8 /* Resources */,
+				7D15A58FCD4242DEDF8CFDF3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A032213E1F00E38A009C85D8 /* PBXTargetDependency */,
+			);
+			name = tectCplusPlusUITests;
+			productName = tectCplusPlusUITests;
+			productReference = A032213C1F00E38A009C85D8 /* tectCplusPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A03221101F00E38A009C85D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Minte;
+				TargetAttributes = {
+					A03221171F00E38A009C85D8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A03221301F00E38A009C85D8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A03221171F00E38A009C85D8;
+					};
+					A032213B1F00E38A009C85D8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A03221171F00E38A009C85D8;
+					};
+				};
+			};
+			buildConfigurationList = A03221131F00E38A009C85D8 /* Build configuration list for PBXProject "tectCplusPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A032210F1F00E38A009C85D8;
+			productRefGroup = A03221191F00E38A009C85D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A03221171F00E38A009C85D8 /* tectCplusPlus */,
+				A03221301F00E38A009C85D8 /* tectCplusPlusTests */,
+				A032213B1F00E38A009C85D8 /* tectCplusPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A03221161F00E38A009C85D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A032212B1F00E38A009C85D8 /* LaunchScreen.storyboard in Resources */,
+				A03221281F00E38A009C85D8 /* Assets.xcassets in Resources */,
+				A03221261F00E38A009C85D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A032212F1F00E38A009C85D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A032213A1F00E38A009C85D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1298DE31FFD3CA92D480D6A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		198432C9F985E976B04938BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D91921AEA9B60A4D0C9BA81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D15A58FCD4242DEDF8CFDF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D7621951A3E857DB620964A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C13988F35F4F95D1300A48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9B9FE9EB5BDDD2C82BAB90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABDC43E001BFB122799A064B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03221141F00E38A009C85D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03221231F00E38A009C85D8 /* ViewController.mm in Sources */,
+				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
+				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
+				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
+				A032211D1F00E38A009C85D8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A032212D1F00E38A009C85D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03221361F00E38A009C85D8 /* tectCplusPlusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03221381F00E38A009C85D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03221411F00E38A009C85D8 /* tectCplusPlusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A03221331F00E38A009C85D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03221171F00E38A009C85D8 /* tectCplusPlus */;
+			targetProxy = A03221321F00E38A009C85D8 /* PBXContainerItemProxy */;
+		};
+		A032213E1F00E38A009C85D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A03221171F00E38A009C85D8 /* tectCplusPlus */;
+			targetProxy = A032213D1F00E38A009C85D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A03221241F00E38A009C85D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A03221251F00E38A009C85D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A03221291F00E38A009C85D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A032212A1F00E38A009C85D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A03221431F00E38A009C85D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A03221441F00E38A009C85D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A03221461F00E38A009C85D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tectCplusPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A03221471F00E38A009C85D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tectCplusPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A03221491F00E38A009C85D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42ACF4AC158A402D81FC86B /* Pods-tectCplusPlusTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tectCplusPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tectCplusPlus.app/tectCplusPlus";
+			};
+			name = Debug;
+		};
+		A032214A1F00E38A009C85D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tectCplusPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tectCplusPlus.app/tectCplusPlus";
+			};
+			name = Release;
+		};
+		A032214C1F00E38A009C85D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7AE9E3123BEAED20FA243AE /* Pods-tectCplusPlusUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = tectCplusPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tectCplusPlus;
+			};
+			name = Debug;
+		};
+		A032214D1F00E38A009C85D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D1E5F7221A64DC54FA9BD0 /* Pods-tectCplusPlusUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = tectCplusPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tectCplusPlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A03221131F00E38A009C85D8 /* Build configuration list for PBXProject "tectCplusPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03221431F00E38A009C85D8 /* Debug */,
+				A03221441F00E38A009C85D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03221451F00E38A009C85D8 /* Build configuration list for PBXNativeTarget "tectCplusPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03221461F00E38A009C85D8 /* Debug */,
+				A03221471F00E38A009C85D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03221481F00E38A009C85D8 /* Build configuration list for PBXNativeTarget "tectCplusPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03221491F00E38A009C85D8 /* Debug */,
+				A032214A1F00E38A009C85D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A032214B1F00E38A009C85D8 /* Build configuration list for PBXNativeTarget "tectCplusPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A032214C1F00E38A009C85D8 /* Debug */,
+				A032214D1F00E38A009C85D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A03221101F00E38A009C85D8 /* Project object */;
+}
