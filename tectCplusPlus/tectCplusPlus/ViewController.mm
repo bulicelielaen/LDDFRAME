@@ -11,6 +11,7 @@
 #import "MyDrawView.h"
 #import "masonry.h"
 #import "LDCell.h"
+#import "MiddleView.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -28,29 +29,24 @@ static NSString * const cellID = @"ldcell";
         
         UICollectionViewFlowLayout* flowLayout =
         [[UICollectionViewFlowLayout alloc] init];
-        
         flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         //一个item包含两个页面 倒计时结束 展示第二个页面
         flowLayout.itemSize = CGSizeMake(SCREEN_WIDTH * 1 , SCREEN_HEIGHT - 64);
-//        flowLayout.minimumLineSpacing = 10;
-//        flowLayout.minimumInteritemSpacing = 10;
-//        flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+        flowLayout.minimumLineSpacing = 0;
+        //flowLayout.minimumInteritemSpacing = 0;
+//        flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64.0)
                                              collectionViewLayout:flowLayout];
         
+  
         _collectionView.delegate = self;
-        
         _collectionView.dataSource = self;
-        
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
-        
         [_collectionView registerClass:[LDCell class] forCellWithReuseIdentifier:cellID];
         _collectionView.pagingEnabled = YES;
         _collectionView.backgroundColor = [UIColor clearColor];
-        
       }
-    
     return _collectionView;
 }
 - (void)viewDidLoad {
@@ -64,7 +60,7 @@ static NSString * const cellID = @"ldcell";
 - (void)buildingMainFrame
 {
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:82/255.0 green:175/255.0 blue:77/255.0 alpha:1];
-    self.navigationItem.title = @"小学(历史)三年级上册";
+    //self.navigationItem.title = @"小学(历史)三年级上册";
     [self.view addSubview:self.collectionView];
     
     
@@ -74,13 +70,27 @@ static NSString * const cellID = @"ldcell";
 #pragma mark -- collectionViewDelegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return 1;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LDCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    cell.label.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    cell.backgroundColor = [UIColor cyanColor];
+    
+    //应该以一个单词为
+    [cell inAWord:^(NSString *word) {
+        NSLog(@"%@", [NSString stringWithFormat:@"点击了综合练习 当前的单词是:%@",word]);
+    } synchronize:^(NSString *word) {
+        NSLog(@"点击了同步练习");
+    } knowThat:^(MiddleView * middleView) {
+        NSLog(@"点击了 知道");
+        middleView.middleType = LDDMidleReally;
+    } DontKonw:^(MiddleView * middleView) {
+        NSLog(@"点击了 不知道");
+        middleView.middleType = LDDNext;
+    } notSure:^(MiddleView * middleView) {
+        NSLog(@"点击了 不确定");
+        middleView.middleType = LDDMidleReally;
+    }];
     return cell;
 }
 

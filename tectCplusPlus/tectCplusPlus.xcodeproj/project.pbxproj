@@ -21,6 +21,11 @@
 		A03221501F00E43F009C85D8 /* libcodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A032214F1F00E43F009C85D8 /* libcodeLibrary.a */; };
 		A03221531F00F476009C85D8 /* MyDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221521F00F476009C85D8 /* MyDrawView.m */; };
 		A03221561F010AC0009C85D8 /* LDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221551F010AC0009C85D8 /* LDCell.m */; };
+		A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F4F1F01F42B00B802E6 /* BottomView.m */; };
+		A0B23F531F01F85500B802E6 /* LDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F521F01F85500B802E6 /* LDButton.m */; };
+		A0B23F561F02032100B802E6 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F551F02032100B802E6 /* TopView.m */; };
+		A0B23F591F02081200B802E6 /* MiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F581F02081200B802E6 /* MiddleView.m */; };
+		A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F5B1F02362A00B802E6 /* UpView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,16 @@
 		A03221521F00F476009C85D8 /* MyDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDrawView.m; sourceTree = "<group>"; };
 		A03221541F010AC0009C85D8 /* LDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCell.h; sourceTree = "<group>"; };
 		A03221551F010AC0009C85D8 /* LDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCell.m; sourceTree = "<group>"; };
+		A0B23F4E1F01F42B00B802E6 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
+		A0B23F4F1F01F42B00B802E6 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
+		A0B23F511F01F85500B802E6 /* LDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDButton.h; sourceTree = "<group>"; };
+		A0B23F521F01F85500B802E6 /* LDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDButton.m; sourceTree = "<group>"; };
+		A0B23F541F02032100B802E6 /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		A0B23F551F02032100B802E6 /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
+		A0B23F571F02081200B802E6 /* MiddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleView.h; sourceTree = "<group>"; };
+		A0B23F581F02081200B802E6 /* MiddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleView.m; sourceTree = "<group>"; };
+		A0B23F5A1F02362A00B802E6 /* UpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpView.h; sourceTree = "<group>"; };
+		A0B23F5B1F02362A00B802E6 /* UpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpView.m; sourceTree = "<group>"; };
 		B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.release.xcconfig"; sourceTree = "<group>"; };
 		E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AE9E3123BEAED20FA243AE /* Pods-tectCplusPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +176,7 @@
 				A03221221F00E38A009C85D8 /* ViewController.mm */,
 				A03221541F010AC0009C85D8 /* LDCell.h */,
 				A03221551F010AC0009C85D8 /* LDCell.m */,
+				A0B23F4D1F01F40D00B802E6 /* Views */,
 				A03221241F00E38A009C85D8 /* Main.storyboard */,
 				A03221271F00E38A009C85D8 /* Assets.xcassets */,
 				A03221291F00E38A009C85D8 /* LaunchScreen.storyboard */,
@@ -194,6 +210,23 @@
 				A03221421F00E38A009C85D8 /* Info.plist */,
 			);
 			path = tectCplusPlusUITests;
+			sourceTree = "<group>";
+		};
+		A0B23F4D1F01F40D00B802E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0B23F511F01F85500B802E6 /* LDButton.h */,
+				A0B23F521F01F85500B802E6 /* LDButton.m */,
+				A0B23F4E1F01F42B00B802E6 /* BottomView.h */,
+				A0B23F4F1F01F42B00B802E6 /* BottomView.m */,
+				A0B23F541F02032100B802E6 /* TopView.h */,
+				A0B23F551F02032100B802E6 /* TopView.m */,
+				A0B23F571F02081200B802E6 /* MiddleView.h */,
+				A0B23F581F02081200B802E6 /* MiddleView.m */,
+				A0B23F5A1F02362A00B802E6 /* UpView.h */,
+				A0B23F5B1F02362A00B802E6 /* UpView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,10 +494,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03221231F00E38A009C85D8 /* ViewController.mm in Sources */,
+				A0B23F531F01F85500B802E6 /* LDButton.m in Sources */,
+				A0B23F561F02032100B802E6 /* TopView.m in Sources */,
 				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
 				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
+				A0B23F591F02081200B802E6 /* MiddleView.m in Sources */,
 				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
 				A032211D1F00E38A009C85D8 /* main.m in Sources */,
+				A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */,
+				A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

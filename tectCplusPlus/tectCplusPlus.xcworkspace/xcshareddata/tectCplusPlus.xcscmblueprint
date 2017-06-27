@@ -1,14 +1,17 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A73C17C81B9874919D38D3EBBF3B26FB13E99D40",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "37b23120-c52a-4c25-9981-50db44ac9bdf++8973" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A73C17C81B9874919D38D3EBBF3B26FB13E99D40" : 9223372036854775807,
     "37b23120-c52a-4c25-9981-50db44ac9bdf++8973" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CDF7ED41-4E17-4AD1-B7E2-CB7235DC2A88",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A73C17C81B9874919D38D3EBBF3B26FB13E99D40" : "Git\/",
     "37b23120-c52a-4c25-9981-50db44ac9bdf++8973" : "Next\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "tectCplusPlus",
@@ -19,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/buliceli.local",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37b23120-c52a-4c25-9981-50db44ac9bdf++8973"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bulicelielaen\/LDDFRAME.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A73C17C81B9874919D38D3EBBF3B26FB13E99D40"
     }
   ]
 }
