@@ -7,14 +7,9 @@
 //
 
 #import "UpView.h"
-#import "LDButton.h"
 #import "masonry.h"
 @interface UpView ()
-@property(nonatomic,strong)LDButton * voiceBtn;
-@property(nonatomic,strong)UILabel * timeLabel;
-@property(nonatomic,strong)LDButton * questionBtn;
-@property(nonatomic,strong)NSTimer * timer;
-@property(nonatomic,assign)int timeCount;
+
 @end
 @implementation UpView
 
@@ -33,6 +28,9 @@
         [self addSubview:_voiceBtn];
         [self addSubview:_timeLabel];
         [self addSubview:_questionBtn];
+        
+        NSString * title = [NSString stringWithFormat:@"时间: 00:%02d",10];
+        self.timeLabel.text = title;
     }
     return self;
 }
@@ -59,9 +57,8 @@
 }
 - (void)startTimer
 {
-    [self stopTimer];
+    [self stopTimer];//CADisplayLink
     self.timeCount = 10;
-    
     self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(countDown:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 
@@ -73,12 +70,19 @@
     }
 }
 - (void)countDown:(NSTimer *)timer{
-    //NSLog(@"%d",self.timeCount);
     NSString * title = [NSString stringWithFormat:@"时间: 00:%02d",self.timeCount];
     self.timeLabel.text = title;
     self.timeCount -= 1;
+    self.isStop = NO;
     if (self.timeCount == 0) {
+        self.isStop = YES;
+        self.countStop(self.isStop);
         [self stopTimer];
       }
+}
+
+- (void)theCountdown:(Stop)stop
+{
+    self.countStop = stop;
 }
 @end

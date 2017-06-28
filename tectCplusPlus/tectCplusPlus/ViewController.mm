@@ -12,6 +12,8 @@
 #import "masonry.h"
 #import "LDCell.h"
 #import "MiddleView.h"
+#import "UpView.h"
+#import "TopView.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -75,25 +77,57 @@ static NSString * const cellID = @"ldcell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LDCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    
-    //应该以一个单词为
     [cell inAWord:^(NSString *word) {
         NSLog(@"%@", [NSString stringWithFormat:@"点击了综合练习 当前的单词是:%@",word]);
     } synchronize:^(NSString *word) {
         NSLog(@"点击了同步练习");
-    } knowThat:^(MiddleView * middleView) {
-        NSLog(@"点击了 知道");
-        middleView.middleType = LDDMidleReally;
-    } DontKonw:^(MiddleView * middleView) {
-        NSLog(@"点击了 不知道");
-        middleView.middleType = LDDNext;
-    } notSure:^(MiddleView * middleView) {
-        NSLog(@"点击了 不确定");
-        middleView.middleType = LDDMidleReally;
     }];
+    void (^lddFalse)() = ^(){
+        cell.topView.upView.timeLabel.hidden = YES;
+        [cell.topView.upView stopTimer];
+    };
+    void(^lddTure)() = ^(){
+        cell.topView.upView.timeLabel.hidden = NO;
+        cell.topView.upView.timeLabel.text = [NSString stringWithFormat:@"时间: 00:%02d",10];
+        [cell.topView.upView startTimer];
+    };
+    [cell.topView.middleView knowClick:^(MiddleView *middleView) {
+        NSLog(@"我知道");
+        middleView.middleType = LDDMidleReally;
+        lddFalse();
+        
+    } dontKonwClick:^(MiddleView *middleView) {
+        NSLog(@"不知道");
+        middleView.middleType = LDDNext;
+        lddFalse();
+    } notSureClick:^(MiddleView *middleView) {
+        NSLog(@"不确定");
+        middleView.middleType = LDDMidleReally;
+        lddFalse();
+    } reallyClick:^(MiddleView *middleView) {
+         NSLog(@"真会");
+        middleView.middleType = LDDMidleKnowOrDontKnow;
+        lddTure();
+    } falseWillClick:^(MiddleView *middleView) {
+        NSLog(@"假会");
+        middleView.middleType = LDDMidleKnowOrDontKnow;
+        lddTure();
+        
+    } nextClick:^(MiddleView *middleView) {
+        NSLog(@"下一个");
+        middleView.middleType = LDDMidleKnowOrDontKnow;
+        lddTure();
+        
+    }];
+    
+    [cell.topView.upView theCountdown:^(BOOL isStop) {
+       cell.topView.middleView.middleType = LDDNext;
+       lddFalse();
+    }];
+    
+
     return cell;
 }
-
 
 
 

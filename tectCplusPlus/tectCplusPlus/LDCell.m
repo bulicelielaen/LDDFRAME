@@ -19,8 +19,6 @@
 #import "BottomView.h"
 #import "TopView.h"
 @interface LDCell ()
-@property(nonatomic,strong)TopView * topView;
-@property(nonatomic,strong)BottomView * bottomView;
 @property(nonatomic,strong)UIButton * sumBtn;
 @property(nonatomic,strong)UIView * spaceView;
 @property(nonatomic,strong)UIButton * synchronizeBtn;
@@ -35,23 +33,7 @@
         _topView.middleView.middleType = LDDMidleKnowOrDontKnow;//默认
         [_topView.upView startTimer];
         
-        for (int i = 0; i < _topView.middleView.subviews.count; i++) {
-            LDButton * btn = _topView.middleView.subviews[i];
-            btn.block = ^(UIButton * btn){
-                if ([btn.currentTitle isEqualToString:@"我知道"]) {
-                    self.knowClick(_topView.middleView);
-                }
-                if ([btn.currentTitle isEqualToString:@"不确定"]) {
-                    self.notSureClick(_topView.middleView);
-                }
-                if ([btn.currentTitle isEqualToString:@"不知道"]) {
-                    self.dontKonwClick(_topView.middleView);
-                }
-                
-            };
-        }
-        
-#pragma mark -- 分层解耦
+        #pragma mark -- 分层解耦
         _bottomView = [[BottomView alloc]init];
         [self.contentView addSubview:_bottomView];
         __weak typeof(self) weakSelf = self;
@@ -82,15 +64,12 @@
         make.right.mas_offset(-5);
         make.bottom.mas_equalTo(_bottomView.mas_top).mas_offset(-5);
     }];
+    
+   
 }
-
-- (void)inAWord:(sumBtnClick)sumBtn synchronize:(synchronizeBtnClick)synchronizeBtn knowThat:(KnowThat)know DontKonw:(DontKnow)dontKonw notSure:(NotSure)notSure
+- (void)inAWord:(sumBtnClick)sumBtn synchronize:(synchronizeBtnClick)synchronizeBtn
 {
     self.sumBtnClicK = sumBtn;
     self.synchronizeBtnClick = synchronizeBtn;
-    self.knowClick = know;
-    self.dontKonwClick = dontKonw;
-    self.notSureClick = notSure;
-    
 }
 @end

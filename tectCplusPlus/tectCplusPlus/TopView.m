@@ -23,11 +23,12 @@
         self.layer.borderWidth = 1;
         
         _middleView = [[MiddleView alloc]init];
-       
         [self addSubview:_middleView];
         
         _upView = [[UpView alloc]init];
         [self addSubview:_upView];
+        
+        //_downView = [[DownView alloc]init];
     }
     return self;
 }
