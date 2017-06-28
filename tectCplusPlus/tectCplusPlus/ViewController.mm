@@ -81,6 +81,10 @@ static NSString * const cellID = @"ldcell";
         NSLog(@"%@", [NSString stringWithFormat:@"点击了综合练习 当前的单词是:%@",word]);
     } synchronize:^(NSString *word) {
         NSLog(@"点击了同步练习");
+        UIViewController * vc = [[UIViewController alloc]init];
+        vc.view.backgroundColor = [UIColor lightGrayColor];
+        vc.title = @"同步练习";
+        [self.navigationController pushViewController:vc animated:YES];
     }];
     void (^lddFalse)() = ^(){
         cell.topView.upView.timeLabel.hidden = YES;
