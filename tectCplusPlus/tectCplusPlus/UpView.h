@@ -13,6 +13,8 @@ typedef void(^Stop) (BOOL isStop);
 @property(nonatomic,strong)LDButton * voiceBtn;
 @property(nonatomic,strong)UILabel * timeLabel;
 @property(nonatomic,strong)LDButton * questionBtn;
+@property(nonatomic,strong)UILabel * wordLabel;
+@property(nonatomic,strong)UILabel * wordTransitiveL;
 @property(nonatomic,strong)NSTimer * timer;
 @property(nonatomic,assign)int timeCount;
 @property(nonatomic,assign)BOOL isStop;

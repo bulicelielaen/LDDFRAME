@@ -7,6 +7,7 @@ target 'tectCplusPlus' do
 
   # Pods for tectCplusPlus
   pod 'Masonry', '~> 1.0.2'
+  pod 'MJExtension', '~> 3.0.13'
   target 'tectCplusPlusTests' do
     inherit! :search_paths
     # Pods for testing

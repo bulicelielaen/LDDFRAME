@@ -28,7 +28,8 @@
         _upView = [[UpView alloc]init];
         [self addSubview:_upView];
         
-        //_downView = [[DownView alloc]init];
+        _downView = [[DownView alloc]init];
+        [self addSubview:_downView];
     }
     return self;
 }
@@ -46,6 +47,12 @@
         make.left.and.right.mas_offset(0);
         make.top.mas_offset(0);
         make.bottom.mas_equalTo(_middleView.mas_top);
+    }];
+    
+    [_downView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.mas_offset(0);
+        make.top.mas_equalTo(_middleView.mas_bottom);
+        make.bottom.mas_offset(0);
     }];
 }
 @end

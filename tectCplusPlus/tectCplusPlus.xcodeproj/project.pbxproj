@@ -26,6 +26,8 @@
 		A0B23F561F02032100B802E6 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F551F02032100B802E6 /* TopView.m */; };
 		A0B23F591F02081200B802E6 /* MiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F581F02081200B802E6 /* MiddleView.m */; };
 		A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F5B1F02362A00B802E6 /* UpView.m */; };
+		A0DB1F2D1F04D92C00FE0384 /* model.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DB1F2C1F04D92C00FE0384 /* model.m */; };
+		A0DB1F301F04DE9700FE0384 /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DB1F2F1F04DE9700FE0384 /* DownView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		A0B23F581F02081200B802E6 /* MiddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleView.m; sourceTree = "<group>"; };
 		A0B23F5A1F02362A00B802E6 /* UpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpView.h; sourceTree = "<group>"; };
 		A0B23F5B1F02362A00B802E6 /* UpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpView.m; sourceTree = "<group>"; };
+		A0DB1F2B1F04D92C00FE0384 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		A0DB1F2C1F04D92C00FE0384 /* model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model.m; sourceTree = "<group>"; };
+		A0DB1F2E1F04DE9700FE0384 /* DownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownView.h; sourceTree = "<group>"; };
+		A0DB1F2F1F04DE9700FE0384 /* DownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownView.m; sourceTree = "<group>"; };
 		B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.release.xcconfig"; sourceTree = "<group>"; };
 		E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AE9E3123BEAED20FA243AE /* Pods-tectCplusPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 				A032211F1F00E38A009C85D8 /* AppDelegate.m */,
 				A03221211F00E38A009C85D8 /* ViewController.h */,
 				A03221221F00E38A009C85D8 /* ViewController.mm */,
+				A0DB1F2A1F04D91300FE0384 /* Model */,
 				A0B23F4D1F01F40D00B802E6 /* Views */,
 				A03221241F00E38A009C85D8 /* Main.storyboard */,
 				A03221271F00E38A009C85D8 /* Assets.xcassets */,
@@ -225,8 +232,19 @@
 				A0B23F581F02081200B802E6 /* MiddleView.m */,
 				A0B23F5A1F02362A00B802E6 /* UpView.h */,
 				A0B23F5B1F02362A00B802E6 /* UpView.m */,
+				A0DB1F2E1F04DE9700FE0384 /* DownView.h */,
+				A0DB1F2F1F04DE9700FE0384 /* DownView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		A0DB1F2A1F04D91300FE0384 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0DB1F2B1F04D92C00FE0384 /* model.h */,
+				A0DB1F2C1F04D92C00FE0384 /* model.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,12 +512,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03221231F00E38A009C85D8 /* ViewController.mm in Sources */,
+				A0DB1F2D1F04D92C00FE0384 /* model.m in Sources */,
 				A0B23F531F01F85500B802E6 /* LDButton.m in Sources */,
 				A0B23F561F02032100B802E6 /* TopView.m in Sources */,
 				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
 				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
 				A0B23F591F02081200B802E6 /* MiddleView.m in Sources */,
 				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
+				A0DB1F301F04DE9700FE0384 /* DownView.m in Sources */,
 				A032211D1F00E38A009C85D8 /* main.m in Sources */,
 				A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */,
 				A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */,

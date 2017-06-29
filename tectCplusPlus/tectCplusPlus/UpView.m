@@ -25,6 +25,13 @@
         _questionBtn = [[LDButton alloc]init];
         [_questionBtn setTitle:@"Qui" forState:UIControlStateNormal];
         [_questionBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        _wordLabel = [[UILabel alloc]init];
+        _wordLabel.numberOfLines = 0;
+        _wordTransitiveL = [[UILabel alloc]init];
+        _wordTransitiveL.font = [UIFont systemFontOfSize:12];
+        _wordTransitiveL.numberOfLines = 0;
+        [self addSubview:_wordLabel];
+        [self addSubview:_wordTransitiveL];
         [self addSubview:_voiceBtn];
         [self addSubview:_timeLabel];
         [self addSubview:_questionBtn];
@@ -54,6 +61,18 @@
         make.top.mas_offset(5);
         make.height.mas_equalTo(44);
     }];
+    
+    [_wordLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(_voiceBtn.mas_left);
+        make.top.mas_equalTo(_voiceBtn.mas_bottom).mas_offset(5);
+        make.right.mas_offset(-5);
+        
+    }];
+    [_wordTransitiveL mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(_voiceBtn.mas_left);
+        make.top.mas_equalTo(_wordLabel.mas_bottom).mas_offset(5);
+        make.right.mas_offset(-5);
+    }];
 }
 - (void)startTimer
 {
@@ -61,6 +80,8 @@
     self.timeCount = 10;
     self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(countDown:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    
+    self.wordTransitiveL.hidden = YES;
 
 }
 - (void)stopTimer {
@@ -68,6 +89,8 @@
         [_timer invalidate];
         _timer = nil;
     }
+    
+    self.wordTransitiveL.hidden = NO;
 }
 - (void)countDown:(NSTimer *)timer{
     NSString * title = [NSString stringWithFormat:@"时间: 00:%02d",self.timeCount];
