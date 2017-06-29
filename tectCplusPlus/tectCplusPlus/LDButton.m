@@ -16,7 +16,6 @@
         
         [self addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
-        
     }
     return self;
 }

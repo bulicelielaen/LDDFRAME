@@ -87,79 +87,19 @@ static int i = 0;
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LDCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    if (i == self.dataSource.count - 1) {
+    if (i == self.dataSource.count) {
         //结束
         i = 0;
     }
     model * firstM = self.dataSource[i];
-    cell.topView.upView.wordLabel.text = firstM.word;
-    cell.topView.upView.wordTransitiveL.text = firstM.wordChinese;
-    cell.topView.downView.exampleL.text = firstM.wordExample;
-    cell.topView.downView.exampleL.hidden = YES;
-    
-    [cell inAWord:^(NSString *word) {
-        NSLog(@"%@", [NSString stringWithFormat:@"点击了综合练习 当前的单词是:%@",word]);
-    } synchronize:^(NSString *word) {
-        NSLog(@"点击了同步练习");
-        UIViewController * vc = [[UIViewController alloc]init];
-        vc.view.backgroundColor = [UIColor lightGrayColor];
-        vc.title = @"同步练习";
-        [self.navigationController pushViewController:vc animated:YES];
-    }];
-    
-    
-    void (^lddFalse)() = ^(){
-        cell.topView.upView.timeLabel.hidden = YES;
-        [cell.topView.upView stopTimer];
-        cell.topView.downView.exampleL.hidden = NO;
-    };
-    void(^lddTure)() = ^(){
-        cell.topView.upView.timeLabel.hidden = NO;
-        cell.topView.upView.timeLabel.text = [NSString stringWithFormat:@"时间: 00:%02d",10];
-        [cell.topView.upView startTimer];
-        cell.topView.downView.exampleL.hidden = YES;
-    };
-    void(^repeatCode)() = ^(){
-        lddTure();
-        i++;
-        [self.collectionView reloadData];
-    };
-    [cell.topView.middleView knowClick:^(MiddleView *middleView) {
-        NSLog(@"我知道");
-        middleView.middleType = LDDMidleReally;
-        lddFalse();
-        
-    } dontKonwClick:^(MiddleView *middleView) {
-        NSLog(@"不知道");
-        middleView.middleType = LDDNext;
-        lddFalse();
-    } notSureClick:^(MiddleView *middleView) {
-        NSLog(@"不确定");
-        middleView.middleType = LDDMidleReally;
-        lddFalse();
-        
-    } reallyClick:^(MiddleView *middleView) {//真会假会下一个之后要往下执行
-         NSLog(@"真会");
-        middleView.middleType = LDDMidleKnowOrDontKnow;
-        repeatCode();
-
-    } falseWillClick:^(MiddleView *middleView) {
-        NSLog(@"假会");
-        middleView.middleType = LDDMidleKnowOrDontKnow;
-        repeatCode();
-
-    } nextClick:^(MiddleView *middleView) {
-        NSLog(@"下一个");
-        middleView.middleType = LDDMidleKnowOrDontKnow;
-        repeatCode();
-
-    }];
-    
-    [cell.topView.upView theCountdown:^(BOOL isStop) {//倒计时结束
-       cell.topView.middleView.middleType = LDDNext;
-       lddFalse();
-    }];
-    
+    cell.model = firstM;
+    //底部View的点击事件
+    [cell bottomViewClickEvent:(self)];
+    //上部View的点击事件
+    [cell topViewClickEvent:i collectionView:self.collectionView];
+    i++;
+    //倒计时事件
+    [cell theCountdownEvent];
 
     return cell;
 }

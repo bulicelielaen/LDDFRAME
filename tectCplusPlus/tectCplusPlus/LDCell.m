@@ -72,4 +72,96 @@
     self.sumBtnClicK = sumBtn;
     self.synchronizeBtnClick = synchronizeBtn;
 }
+
+- (void)setModel:(model *)model
+{
+    _model = model;
+    self.topView.upView.wordLabel.text = model.word;
+    self.topView.upView.wordTransitiveL.text = model.wordChinese;
+    self.topView.downView.exampleL.text = model.wordExample;
+    self.topView.downView.exampleL.hidden = YES;
+
+}
+
+- (void)bottomViewClickEvent:(UIViewController*)Vc
+{
+    [self inAWord:^(NSString *word) {
+        NSLog(@"%@", [NSString stringWithFormat:@"点击了综合练习 当前的单词是:%@",word]);
+    } synchronize:^(NSString *word) {
+        NSLog(@"点击了同步练习");
+        UIViewController * vc = [[UIViewController alloc]init];
+        vc.view.backgroundColor = [UIColor lightGrayColor];
+        vc.title = @"同步练习";
+        [Vc.navigationController pushViewController:vc animated:YES];
+    }];
+
+}
+
+- (void)theCountdownEvent
+{
+    void (^lddFalse)() = ^(){
+        self.topView.upView.timeLabel.hidden = YES;
+        [self.topView.upView stopTimer];
+        self.topView.downView.exampleL.hidden = NO;
+    };
+    [self.topView.upView theCountdown:^(BOOL isStop) {//倒计时结束
+        self.topView.middleView.middleType = LDDNext;
+        lddFalse();
+    }];
+}
+
+- (void)topViewClickEvent:(int)i collectionView:(UICollectionView *)collectionV
+{
+    NSLog(@"+++++%d++++",i);
+    void (^lddFalse)() = ^(){
+        self.topView.upView.timeLabel.hidden = YES;
+        [self.topView.upView stopTimer];
+        self.topView.downView.exampleL.hidden = NO;
+    };
+    void(^lddTure)() = ^(){
+        self.topView.upView.timeLabel.hidden = NO;
+        self.topView.upView.timeLabel.text = [NSString stringWithFormat:@"时间: 00:%02d",10];
+        [self.topView.upView startTimer];
+        self.topView.downView.exampleL.hidden = YES;
+    };
+   
+    //__block int blocki = i;//block内部修改外部变量的值
+    void(^repeatCode)() = ^(){
+        lddTure();
+        //blocki++;
+        [collectionV reloadData];
+    };
+    [self.topView.middleView knowClick:^(MiddleView *middleView) {
+        NSLog(@"我知道");
+        middleView.middleType = LDDMidleReally;
+        lddFalse();
+        
+    } dontKonwClick:^(MiddleView *middleView) {
+        NSLog(@"不知道");
+        middleView.middleType = LDDNext;
+        lddFalse();
+    } notSureClick:^(MiddleView *middleView) {
+        NSLog(@"不确定");
+        middleView.middleType = LDDMidleReally;
+        lddFalse();
+        
+    } reallyClick:^(MiddleView *middleView) {//真会假会下一个之后要往下执行
+        NSLog(@"真会");
+        middleView.middleType = LDDMidleKnowOrDontKnow;
+        repeatCode();
+        
+    } falseWillClick:^(MiddleView *middleView) {
+        NSLog(@"假会");
+        middleView.middleType = LDDMidleKnowOrDontKnow;
+        repeatCode();
+        
+    } nextClick:^(MiddleView *middleView) {
+        NSLog(@"下一个");
+        middleView.middleType = LDDMidleKnowOrDontKnow;
+        repeatCode();
+        
+    }];
+    
+
+}
 @end
