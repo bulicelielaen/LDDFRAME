@@ -16,9 +16,6 @@
 #import "TopView.h"
 #import "model.h"
 #import "MJExtension.h"
-#import "Clothes.h"
-#import "DaotaCloth.h"
-#import "LoLCloth.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -70,9 +67,6 @@ static int i = 0;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    DaotaCloth * daota = [[DaotaCloth alloc]init];
-//    [daota showClothesType];
-//    return;
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self buildingMainFrame];
     

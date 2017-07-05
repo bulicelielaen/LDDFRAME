@@ -10,7 +10,6 @@
 		021B9314E1BCC528948D9CF2 /* libPods-tectCplusPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */; };
 		1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */; };
 		9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */; };
-		A0240B1D1F0CDB890075DB7E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A0240B1C1F0CDB890075DB7E /* Person.m */; };
 		A032211D1F00E38A009C85D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211C1F00E38A009C85D8 /* main.m */; };
 		A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211F1F00E38A009C85D8 /* AppDelegate.m */; };
 		A03221231F00E38A009C85D8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A03221221F00E38A009C85D8 /* ViewController.mm */; };
@@ -56,8 +55,6 @@
 		454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.release.xcconfig"; sourceTree = "<group>"; };
-		A0240B1B1F0CDB890075DB7E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		A0240B1C1F0CDB890075DB7E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A03221181F00E38A009C85D8 /* tectCplusPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tectCplusPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A032211C1F00E38A009C85D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A032211E1F00E38A009C85D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,8 +236,6 @@
 				A050728A1F051FBB00A76A39 /* DaotaCloth.m */,
 				A050728C1F051FDB00A76A39 /* LoLCloth.h */,
 				A050728D1F051FDB00A76A39 /* LoLCloth.m */,
-				A0240B1B1F0CDB890075DB7E /* Person.h */,
-				A0240B1C1F0CDB890075DB7E /* Person.m */,
 			);
 			name = "工厂模式";
 			sourceTree = "<group>";
@@ -550,7 +545,6 @@
 				A0B23F591F02081200B802E6 /* MiddleView.m in Sources */,
 				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
 				A0DB1F301F04DE9700FE0384 /* DownView.m in Sources */,
-				A0240B1D1F0CDB890075DB7E /* Person.m in Sources */,
 				A032211D1F00E38A009C85D8 /* main.m in Sources */,
 				A050728B1F051FBB00A76A39 /* DaotaCloth.m in Sources */,
 				A05072881F051F9900A76A39 /* Clothes.m in Sources */,
