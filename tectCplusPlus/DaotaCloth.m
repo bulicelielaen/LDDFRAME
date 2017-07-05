@@ -9,5 +9,8 @@
 #import "DaotaCloth.h"
 
 @implementation DaotaCloth
-
+- (void)showClothesType
+{
+    NSLog(@"这件衣服的类型是Daota");
+}
 @end

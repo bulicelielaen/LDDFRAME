@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Clothes : NSObject
-
+- (void)showClothesType;
 @end

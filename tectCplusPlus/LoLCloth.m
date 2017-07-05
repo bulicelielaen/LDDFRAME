@@ -9,5 +9,8 @@
 #import "LoLCloth.h"
 
 @implementation LoLCloth
-
+- (void)showClothesType
+{
+    NSLog(@"这件衣服的类型是LoL");
+}
 @end

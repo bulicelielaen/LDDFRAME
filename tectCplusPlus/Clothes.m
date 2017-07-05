@@ -9,5 +9,8 @@
 #import "Clothes.h"
 
 @implementation Clothes
-
+- (void)showClothesType
+{
+    
+}
 @end

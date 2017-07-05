@@ -21,6 +21,9 @@
 		A03221501F00E43F009C85D8 /* libcodeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A032214F1F00E43F009C85D8 /* libcodeLibrary.a */; };
 		A03221531F00F476009C85D8 /* MyDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221521F00F476009C85D8 /* MyDrawView.m */; };
 		A03221561F010AC0009C85D8 /* LDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221551F010AC0009C85D8 /* LDCell.m */; };
+		A05072881F051F9900A76A39 /* Clothes.m in Sources */ = {isa = PBXBuildFile; fileRef = A05072871F051F9900A76A39 /* Clothes.m */; };
+		A050728B1F051FBB00A76A39 /* DaotaCloth.m in Sources */ = {isa = PBXBuildFile; fileRef = A050728A1F051FBB00A76A39 /* DaotaCloth.m */; };
+		A050728E1F051FDB00A76A39 /* LoLCloth.m in Sources */ = {isa = PBXBuildFile; fileRef = A050728D1F051FDB00A76A39 /* LoLCloth.m */; };
 		A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F4F1F01F42B00B802E6 /* BottomView.m */; };
 		A0B23F531F01F85500B802E6 /* LDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F521F01F85500B802E6 /* LDButton.m */; };
 		A0B23F561F02032100B802E6 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F551F02032100B802E6 /* TopView.m */; };
@@ -74,6 +77,12 @@
 		A03221521F00F476009C85D8 /* MyDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDrawView.m; sourceTree = "<group>"; };
 		A03221541F010AC0009C85D8 /* LDCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCell.h; sourceTree = "<group>"; };
 		A03221551F010AC0009C85D8 /* LDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCell.m; sourceTree = "<group>"; };
+		A05072861F051F9900A76A39 /* Clothes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clothes.h; sourceTree = "<group>"; };
+		A05072871F051F9900A76A39 /* Clothes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clothes.m; sourceTree = "<group>"; };
+		A05072891F051FBB00A76A39 /* DaotaCloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaotaCloth.h; sourceTree = "<group>"; };
+		A050728A1F051FBB00A76A39 /* DaotaCloth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaotaCloth.m; sourceTree = "<group>"; };
+		A050728C1F051FDB00A76A39 /* LoLCloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLCloth.h; sourceTree = "<group>"; };
+		A050728D1F051FDB00A76A39 /* LoLCloth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLCloth.m; sourceTree = "<group>"; };
 		A0B23F4E1F01F42B00B802E6 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
 		A0B23F4F1F01F42B00B802E6 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
 		A0B23F511F01F85500B802E6 /* LDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDButton.h; sourceTree = "<group>"; };
@@ -151,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A032214F1F00E43F009C85D8 /* libcodeLibrary.a */,
+				A05072851F051F7B00A76A39 /* 工厂模式 */,
 				A032211A1F00E38A009C85D8 /* tectCplusPlus */,
 				A03221341F00E38A009C85D8 /* tectCplusPlusTests */,
 				A032213F1F00E38A009C85D8 /* tectCplusPlusUITests */,
@@ -215,6 +225,19 @@
 				A03221421F00E38A009C85D8 /* Info.plist */,
 			);
 			path = tectCplusPlusUITests;
+			sourceTree = "<group>";
+		};
+		A05072851F051F7B00A76A39 /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				A05072861F051F9900A76A39 /* Clothes.h */,
+				A05072871F051F9900A76A39 /* Clothes.m */,
+				A05072891F051FBB00A76A39 /* DaotaCloth.h */,
+				A050728A1F051FBB00A76A39 /* DaotaCloth.m */,
+				A050728C1F051FDB00A76A39 /* LoLCloth.h */,
+				A050728D1F051FDB00A76A39 /* LoLCloth.m */,
+			);
+			name = "工厂模式";
 			sourceTree = "<group>";
 		};
 		A0B23F4D1F01F40D00B802E6 /* Views */ = {
@@ -322,6 +345,7 @@
 				TargetAttributes = {
 					A03221171F00E38A009C85D8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZCKZ945P6H;
 						ProvisioningStyle = Automatic;
 					};
 					A03221301F00E38A009C85D8 = {
@@ -514,6 +538,7 @@
 				A03221231F00E38A009C85D8 /* ViewController.mm in Sources */,
 				A0DB1F2D1F04D92C00FE0384 /* model.m in Sources */,
 				A0B23F531F01F85500B802E6 /* LDButton.m in Sources */,
+				A050728E1F051FDB00A76A39 /* LoLCloth.m in Sources */,
 				A0B23F561F02032100B802E6 /* TopView.m in Sources */,
 				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
 				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
@@ -521,6 +546,8 @@
 				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
 				A0DB1F301F04DE9700FE0384 /* DownView.m in Sources */,
 				A032211D1F00E38A009C85D8 /* main.m in Sources */,
+				A050728B1F051FBB00A76A39 /* DaotaCloth.m in Sources */,
+				A05072881F051F9900A76A39 /* Clothes.m in Sources */,
 				A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */,
 				A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */,
 			);
@@ -672,7 +699,9 @@
 			baseConfigurationReference = 454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZCKZ945P6H;
 				INFOPLIST_FILE = tectCplusPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -688,7 +717,9 @@
 			baseConfigurationReference = B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZCKZ945P6H;
 				INFOPLIST_FILE = tectCplusPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

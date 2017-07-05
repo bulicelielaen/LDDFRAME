@@ -112,7 +112,6 @@
 
 - (void)topViewClickEvent:(int)i collectionView:(UICollectionView *)collectionV
 {
-    NSLog(@"+++++%d++++",i);
     void (^lddFalse)() = ^(){
         self.topView.upView.timeLabel.hidden = YES;
         [self.topView.upView stopTimer];
@@ -124,11 +123,8 @@
         [self.topView.upView startTimer];
         self.topView.downView.exampleL.hidden = YES;
     };
-   
-    //__block int blocki = i;//block内部修改外部变量的值
     void(^repeatCode)() = ^(){
         lddTure();
-        //blocki++;
         [collectionV reloadData];
     };
     [self.topView.middleView knowClick:^(MiddleView *middleView) {
