@@ -17,15 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-<<<<<<< HEAD
-   
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-=======
+//<<<<<<< HEAD
+//   
+//    NSLog(@"Override point for customization after application launch.");
+//    NSLog(@"Override point for customization after application launch.");
+//    NSLog(@"Override point for customization after application launch.");
+//    NSLog(@"Override point for customization after application launch.");
+//    NSLog(@"Override point for customization after application launch.");
+//    NSLog(@"Override point for customization after application launch.");
+//=======
 
     
     /*
@@ -49,7 +49,7 @@
     printf("8888888888");
     printf("8888888888");
 
->>>>>>> dc0757e6ab494a3d99f70a5b58ac2c98d6e14d81
+//>>>>>>> dc0757e6ab494a3d99f70a5b58ac2c98d6e14d81
     return YES;
 }
 
