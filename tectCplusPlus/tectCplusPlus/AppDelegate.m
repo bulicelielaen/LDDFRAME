@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     
     /*
      测试分支合并是造成的代码冲突
@@ -29,6 +30,16 @@
      
      */
     
+
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+
     return YES;
 }
 
