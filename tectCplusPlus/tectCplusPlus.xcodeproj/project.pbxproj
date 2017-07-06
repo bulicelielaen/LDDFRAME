@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		021B9314E1BCC528948D9CF2 /* libPods-tectCplusPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */; };
 		1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */; };
+		575476931F0CE92D00461257 /* LowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575476921F0CE92D00461257 /* LowViewController.m */; };
 		9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */; };
 		A0240B201F0CE8CC0075DB7E /* LDDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */; };
 		A030701C1F0DD8250098DA98 /* ComputerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A03070191F0DD8250098DA98 /* ComputerManager.m */; };
@@ -56,6 +57,8 @@
 /* Begin PBXFileReference section */
 		00D1E5F7221A64DC54FA9BD0 /* Pods-tectCplusPlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		575476911F0CE92D00461257 /* LowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowViewController.h; sourceTree = "<group>"; };
+		575476921F0CE92D00461257 /* LowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowViewController.m; sourceTree = "<group>"; };
 		740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0240B1E1F0CE8CC0075DB7E /* LDDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDTestViewController.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				A03221291F00E38A009C85D8 /* LaunchScreen.storyboard */,
 				A032212C1F00E38A009C85D8 /* Info.plist */,
 				A032211B1F00E38A009C85D8 /* Supporting Files */,
+				575476911F0CE92D00461257 /* LowViewController.h */,
+				575476921F0CE92D00461257 /* LowViewController.m */,
 			);
 			path = tectCplusPlus;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */,
 				A030701C1F0DD8250098DA98 /* ComputerManager.m in Sources */,
 				A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */,
+				575476931F0CE92D00461257 /* LowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
