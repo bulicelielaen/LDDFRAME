@@ -17,14 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
+   
+    NSLog(@"Override point for customization after application launch.");
+    NSLog(@"Override point for customization after application launch.");
+    NSLog(@"Override point for customization after application launch.");
+    NSLog(@"Override point for customization after application launch.");
+    NSLog(@"Override point for customization after application launch.");
+    NSLog(@"Override point for customization after application launch.");
     return YES;
 }
 
