@@ -11,6 +11,8 @@
 		1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */; };
 		9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */; };
 		A0240B201F0CE8CC0075DB7E /* LDDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */; };
+		A030701C1F0DD8250098DA98 /* ComputerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A03070191F0DD8250098DA98 /* ComputerManager.m */; };
+		A030701D1F0DD8250098DA98 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A030701B1F0DD8250098DA98 /* NSObject+Extension.m */; };
 		A032211D1F00E38A009C85D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211C1F00E38A009C85D8 /* main.m */; };
 		A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211F1F00E38A009C85D8 /* AppDelegate.m */; };
 		A03221231F00E38A009C85D8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A03221221F00E38A009C85D8 /* ViewController.mm */; };
@@ -58,6 +60,10 @@
 		9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0240B1E1F0CE8CC0075DB7E /* LDDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDTestViewController.h; sourceTree = "<group>"; };
 		A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDTestViewController.m; sourceTree = "<group>"; };
+		A03070181F0DD8250098DA98 /* ComputerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerManager.h; sourceTree = "<group>"; };
+		A03070191F0DD8250098DA98 /* ComputerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerManager.m; sourceTree = "<group>"; };
+		A030701A1F0DD8250098DA98 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		A030701B1F0DD8250098DA98 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 		A03221181F00E38A009C85D8 /* tectCplusPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tectCplusPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A032211C1F00E38A009C85D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A032211E1F00E38A009C85D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,10 +165,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A03070171F0DD80B0098DA98 /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				A03070181F0DD8250098DA98 /* ComputerManager.h */,
+				A03070191F0DD8250098DA98 /* ComputerManager.m */,
+				A030701A1F0DD8250098DA98 /* NSObject+Extension.h */,
+				A030701B1F0DD8250098DA98 /* NSObject+Extension.m */,
+			);
+			name = "链式编程";
+			sourceTree = "<group>";
+		};
 		A032210F1F00E38A009C85D8 = {
 			isa = PBXGroup;
 			children = (
 				A032214F1F00E43F009C85D8 /* libcodeLibrary.a */,
+				A03070171F0DD80B0098DA98 /* 链式编程 */,
 				A05072851F051F7B00A76A39 /* 工厂模式 */,
 				A032211A1F00E38A009C85D8 /* tectCplusPlus */,
 				A03221341F00E38A009C85D8 /* tectCplusPlusTests */,
@@ -551,10 +569,12 @@
 				A0B23F591F02081200B802E6 /* MiddleView.m in Sources */,
 				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
 				A0DB1F301F04DE9700FE0384 /* DownView.m in Sources */,
+				A030701D1F0DD8250098DA98 /* NSObject+Extension.m in Sources */,
 				A032211D1F00E38A009C85D8 /* main.m in Sources */,
 				A050728B1F051FBB00A76A39 /* DaotaCloth.m in Sources */,
 				A05072881F051F9900A76A39 /* Clothes.m in Sources */,
 				A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */,
+				A030701C1F0DD8250098DA98 /* ComputerManager.m in Sources */,
 				A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
