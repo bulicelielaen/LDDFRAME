@@ -17,6 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /*
+     测试分支合并是造成的代码冲突
+     
+     解决冲突是代码提交或者分支合并时经常出现的问题，比较蛋疼。。。。。
+     
+     一不小心可能就会造成代码丢失，系统bug 慎重操作
+     
+     慢慢积累吧
+     
+     */
+    
     return YES;
 }
 
