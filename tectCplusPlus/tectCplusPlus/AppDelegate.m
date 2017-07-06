@@ -12,23 +12,12 @@
 
 @end
 
+
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-//<<<<<<< HEAD
-//   
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//=======
-
-    
-    /*
+   /*
      测试分支合并是造成的代码冲突
      
      解决冲突是代码提交或者分支合并时经常出现的问题，比较蛋疼。。。。。
@@ -39,17 +28,10 @@
      
      */
     
-
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-
-//>>>>>>> dc0757e6ab494a3d99f70a5b58ac2c98d6e14d81
+    NSLog(@"这件衣服的类型是LoL");
+    NSLog(@"这件衣服的类型是LoL");
+    NSLog(@"这件衣服的类型是LoL");
+    NSLog(@"这件衣服的类型是LoL");
     return YES;
 }
 
