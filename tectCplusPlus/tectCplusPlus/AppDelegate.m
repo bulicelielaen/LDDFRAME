@@ -16,85 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-
-    // Override point for customization after application launch.
-
-   
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-    NSLog(@"Override point for customization after application launch.");
-
-
-    
-    /*
-
-=======
-    // Override point for customization after application launch.
-//<<<<<<< HEAD
-//   
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//    NSLog(@"Override point for customization after application launch.");
-//=======
-
-    
-    /*
->>>>>>> parent of 4a1c62f... 修改了Appdelegate.m
-     测试分支合并是造成的代码冲突
-     
-     解决冲突是代码提交或者分支合并时经常出现的问题，比较蛋疼。。。。。
-     
-     一不小心可能就会造成代码丢失，系统bug 慎重操作
-     
-     慢慢积累吧
-     
-     */
-    
-
-    NSLog(@"这件衣服的类型是LoL");
-    NSLog(@"这件衣服的类型是LoL");
-    NSLog(@"这件衣服的类型是LoL");
-    NSLog(@"这件衣服的类型是LoL");
-
-
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-    printf("8888888888");
-
     
     
-    /*
-     代码冲突测试，。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");  
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     printf("8888888888");
-     */
-
+    
     return YES;
 }
 
