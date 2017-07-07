@@ -16,9 +16,6 @@
 #import "TopView.h"
 #import "model.h"
 #import "MJExtension.h"
-#import "CalculateManager.h"
-#import "NSObject+Extension.h"
-#import "ComputerManager.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -70,29 +67,6 @@ static int i = 0;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-#if 0
-    UIImageView * image = [[UIImageView alloc]initWithFrame:CGRectMake(64, 64, 250, 250)];
-    image.image = [UIImage imageNamed:@"popover_background"];
-    [self.view addSubview:image];
-#endif
-#if 1
-    //函数式编程
-    CalculateManager * manage = [[CalculateManager alloc]init];
-    int reu = [[manage calculate:^int(int result) {
-        result += 5;
-        result *= 5;
-        return result;
-    }] result];
-    NSLog(@"---%d---",reu);
-    //链式编程
-    int resu = [NSObject addA:^(ComputerManager *manager) {
-        manager.addA(5).addA(5);
-    }];
-    NSLog(@"---%d---",resu);
-    //响应式编程 --->KVO的本质
-    
-    
-#endif
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self buildingMainFrame];
     
