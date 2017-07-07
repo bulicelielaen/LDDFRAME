@@ -13,6 +13,12 @@
 		579186A61F0E183A008649B4 /* HappyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579186A51F0E183A008649B4 /* HappyViewController.m */; };
 		9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */; };
 		A0240B201F0CE8CC0075DB7E /* LDDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */; };
+<<<<<<< HEAD
+=======
+		A030701C1F0DD8250098DA98 /* ComputerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A03070191F0DD8250098DA98 /* ComputerManager.m */; };
+		A030701D1F0DD8250098DA98 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A030701B1F0DD8250098DA98 /* NSObject+Extension.m */; };
+		A0310EA31F0F1A02009930CE /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0310EA21F0F1A02009930CE /* CalculateManager.m */; };
+>>>>>>> 左岸
 		A032211D1F00E38A009C85D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211C1F00E38A009C85D8 /* main.m */; };
 		A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211F1F00E38A009C85D8 /* AppDelegate.m */; };
 		A03221231F00E38A009C85D8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A03221221F00E38A009C85D8 /* ViewController.mm */; };
@@ -64,6 +70,15 @@
 		9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0240B1E1F0CE8CC0075DB7E /* LDDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDTestViewController.h; sourceTree = "<group>"; };
 		A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDTestViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		A03070181F0DD8250098DA98 /* ComputerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerManager.h; sourceTree = "<group>"; };
+		A03070191F0DD8250098DA98 /* ComputerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerManager.m; sourceTree = "<group>"; };
+		A030701A1F0DD8250098DA98 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		A030701B1F0DD8250098DA98 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		A0310EA11F0F1A02009930CE /* CalculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
+		A0310EA21F0F1A02009930CE /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
+>>>>>>> 左岸
 		A03221181F00E38A009C85D8 /* tectCplusPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tectCplusPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A032211C1F00E38A009C85D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A032211E1F00E38A009C85D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -179,12 +194,29 @@
 			name = "链式编程";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 =======
 >>>>>>> parent of cf35f04... 增加了链式编程思想的代码
+=======
+		A0310EA01F0F1959009930CE /* 函数式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				A0310EA11F0F1A02009930CE /* CalculateManager.h */,
+				A0310EA21F0F1A02009930CE /* CalculateManager.m */,
+			);
+			name = "函数式编程";
+			sourceTree = "<group>";
+		};
+>>>>>>> 左岸
 		A032210F1F00E38A009C85D8 = {
 			isa = PBXGroup;
 			children = (
 				A032214F1F00E43F009C85D8 /* libcodeLibrary.a */,
+<<<<<<< HEAD
+=======
+				A0310EA01F0F1959009930CE /* 函数式编程 */,
+				A03070171F0DD80B0098DA98 /* 链式编程 */,
+>>>>>>> 左岸
 				A05072851F051F7B00A76A39 /* 工厂模式 */,
 				A032211A1F00E38A009C85D8 /* tectCplusPlus */,
 				A03221341F00E38A009C85D8 /* tectCplusPlusTests */,
@@ -571,6 +603,7 @@
 				A0B23F561F02032100B802E6 /* TopView.m in Sources */,
 				579186A61F0E183A008649B4 /* HappyViewController.m in Sources */,
 				A0240B201F0CE8CC0075DB7E /* LDDTestViewController.m in Sources */,
+				A0310EA31F0F1A02009930CE /* CalculateManager.m in Sources */,
 				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
 				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
 				A0B23F591F02081200B802E6 /* MiddleView.m in Sources */,
