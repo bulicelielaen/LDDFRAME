@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021B9314E1BCC528948D9CF2 /* libPods-tectCplusPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */; };
-		1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */; };
+		221DF8D0A82662FB2B3CED25 /* Pods_tectCplusPlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648CA18EDE34122E4C2A2596 /* Pods_tectCplusPlusTests.framework */; };
+		3CFE45892655D2196065E4A0 /* Pods_tectCplusPlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAFE4AB1097C0D96A28B1B2 /* Pods_tectCplusPlusUITests.framework */; };
+		4C1AF95777058DCBE3F5457C /* Pods_tectCplusPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E54C263B29A7FB5A8715200 /* Pods_tectCplusPlus.framework */; };
 		575476931F0CE92D00461257 /* LowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575476921F0CE92D00461257 /* LowViewController.m */; };
-		9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */; };
 		A0240B201F0CE8CC0075DB7E /* LDDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */; };
 		A030701C1F0DD8250098DA98 /* ComputerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A03070191F0DD8250098DA98 /* ComputerManager.m */; };
 		A030701D1F0DD8250098DA98 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A030701B1F0DD8250098DA98 /* NSObject+Extension.m */; };
-		A0310EA31F0F1A02009930CE /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0310EA21F0F1A02009930CE /* CalculateManager.m */; };
 		A032211D1F00E38A009C85D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211C1F00E38A009C85D8 /* main.m */; };
 		A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A032211F1F00E38A009C85D8 /* AppDelegate.m */; };
 		A03221231F00E38A009C85D8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A03221221F00E38A009C85D8 /* ViewController.mm */; };
@@ -60,7 +59,8 @@
 		454C44B35AC5A9E5B730483C /* Pods-tectCplusPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.debug.xcconfig"; sourceTree = "<group>"; };
 		575476911F0CE92D00461257 /* LowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowViewController.h; sourceTree = "<group>"; };
 		575476921F0CE92D00461257 /* LowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowViewController.m; sourceTree = "<group>"; };
-		740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		648CA18EDE34122E4C2A2596 /* Pods_tectCplusPlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tectCplusPlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54C263B29A7FB5A8715200 /* Pods_tectCplusPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tectCplusPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF28E343114066FE5F9062 /* Pods-tectCplusPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0240B1E1F0CE8CC0075DB7E /* LDDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDTestViewController.h; sourceTree = "<group>"; };
 		A0240B1F1F0CE8CC0075DB7E /* LDDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDTestViewController.m; sourceTree = "<group>"; };
@@ -68,8 +68,6 @@
 		A03070191F0DD8250098DA98 /* ComputerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerManager.m; sourceTree = "<group>"; };
 		A030701A1F0DD8250098DA98 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		A030701B1F0DD8250098DA98 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
-		A0310EA11F0F1A02009930CE /* CalculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
-		A0310EA21F0F1A02009930CE /* CalculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		A03221181F00E38A009C85D8 /* tectCplusPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tectCplusPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A032211C1F00E38A009C85D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A032211E1F00E38A009C85D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,10 +111,9 @@
 		A0DB1F2E1F04DE9700FE0384 /* DownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownView.h; sourceTree = "<group>"; };
 		A0DB1F2F1F04DE9700FE0384 /* DownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownView.m; sourceTree = "<group>"; };
 		B9AF0D78178688B8E3F0167F /* Pods-tectCplusPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlus/Pods-tectCplusPlus.release.xcconfig"; sourceTree = "<group>"; };
-		E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlusUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAFE4AB1097C0D96A28B1B2 /* Pods_tectCplusPlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tectCplusPlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AE9E3123BEAED20FA243AE /* Pods-tectCplusPlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusUITests/Pods-tectCplusPlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F42ACF4AC158A402D81FC86B /* Pods-tectCplusPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tectCplusPlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tectCplusPlusTests/Pods-tectCplusPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tectCplusPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03221501F00E43F009C85D8 /* libcodeLibrary.a in Frameworks */,
-				9A765B21D9C4BA7CA242CAB8 /* libPods-tectCplusPlus.a in Frameworks */,
+				4C1AF95777058DCBE3F5457C /* Pods_tectCplusPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021B9314E1BCC528948D9CF2 /* libPods-tectCplusPlusTests.a in Frameworks */,
+				221DF8D0A82662FB2B3CED25 /* Pods_tectCplusPlusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FEC4B7B1BDAC072B96E6E52 /* libPods-tectCplusPlusUITests.a in Frameworks */,
+				3CFE45892655D2196065E4A0 /* Pods_tectCplusPlusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +161,9 @@
 		8B2E583081B956BC519B7C08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				740C8D71AC2798F02D9188CD /* libPods-tectCplusPlus.a */,
-				F836486B56A00C560C884978 /* libPods-tectCplusPlusTests.a */,
-				E052420DE5FD9B9D3F2859BE /* libPods-tectCplusPlusUITests.a */,
+				7E54C263B29A7FB5A8715200 /* Pods_tectCplusPlus.framework */,
+				648CA18EDE34122E4C2A2596 /* Pods_tectCplusPlusTests.framework */,
+				DDAFE4AB1097C0D96A28B1B2 /* Pods_tectCplusPlusUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,20 +179,10 @@
 			name = "链式编程";
 			sourceTree = "<group>";
 		};
-		A0310EA01F0F1959009930CE /* 函数式编程 */ = {
-			isa = PBXGroup;
-			children = (
-				A0310EA11F0F1A02009930CE /* CalculateManager.h */,
-				A0310EA21F0F1A02009930CE /* CalculateManager.m */,
-			);
-			name = "函数式编程";
-			sourceTree = "<group>";
-		};
 		A032210F1F00E38A009C85D8 = {
 			isa = PBXGroup;
 			children = (
 				A032214F1F00E43F009C85D8 /* libcodeLibrary.a */,
-				A0310EA01F0F1959009930CE /* 函数式编程 */,
 				A03070171F0DD80B0098DA98 /* 链式编程 */,
 				A05072851F051F7B00A76A39 /* 工厂模式 */,
 				A032211A1F00E38A009C85D8 /* tectCplusPlus */,
@@ -387,6 +374,7 @@
 					A03221171F00E38A009C85D8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZCKZ945P6H;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					A03221301F00E38A009C85D8 = {
@@ -582,7 +570,6 @@
 				A050728E1F051FDB00A76A39 /* LoLCloth.m in Sources */,
 				A0B23F561F02032100B802E6 /* TopView.m in Sources */,
 				A0240B201F0CE8CC0075DB7E /* LDDTestViewController.m in Sources */,
-				A0310EA31F0F1A02009930CE /* CalculateManager.m in Sources */,
 				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
 				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
 				A0B23F591F02081200B802E6 /* MiddleView.m in Sources */,
@@ -753,8 +740,20 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"-framework",
+					"-\"Result\"",
+					"-\"ReactiveCocoa\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -771,8 +770,20 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"-framework",
+					"-\"Result\"",
+					"-\"ReactiveCocoa\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mintelcn.tectCplusPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -16,6 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+<<<<<<< HEAD
     // Override point for customization after application launch.
 //<<<<<<< HEAD
 //   
@@ -40,16 +41,21 @@
      */
     
 
-//    printf("8888888888");
-//    printf("8888888888");
-//    printf("8888888888");
-//    printf("8888888888");
-//    printf("8888888888");
-//    printf("8888888888");
-//    printf("8888888888");
-//    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
+    printf("8888888888");
 
 //>>>>>>> dc0757e6ab494a3d99f70a5b58ac2c98d6e14d81
+=======
+    
+    
+    
+>>>>>>> parent of a815328... Revert "回滚代码"
     return YES;
 }
 
