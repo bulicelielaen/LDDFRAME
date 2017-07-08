@@ -18,6 +18,7 @@
 #import "masonry.h"
 #import "BottomView.h"
 #import "TopView.h"
+#import "model.h"
 @interface LDCell ()
 @property(nonatomic,strong)UIButton * sumBtn;
 @property(nonatomic,strong)UIView * spaceView;
@@ -72,6 +73,7 @@
     self.sumBtnClicK = sumBtn;
     self.synchronizeBtnClick = synchronizeBtn;
 }
+
 
 - (void)setModel:(model *)model
 {
@@ -160,4 +162,5 @@
     
 
 }
+
 @end
