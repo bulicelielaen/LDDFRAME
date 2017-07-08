@@ -22,8 +22,6 @@
 		A03221531F00F476009C85D8 /* MyDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221521F00F476009C85D8 /* MyDrawView.m */; };
 		A03221561F010AC0009C85D8 /* LDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A03221551F010AC0009C85D8 /* LDCell.m */; };
 		A05072881F051F9900A76A39 /* Clothes.m in Sources */ = {isa = PBXBuildFile; fileRef = A05072871F051F9900A76A39 /* Clothes.m */; };
-		A050728B1F051FBB00A76A39 /* DaotaCloth.m in Sources */ = {isa = PBXBuildFile; fileRef = A050728A1F051FBB00A76A39 /* DaotaCloth.m */; };
-		A050728E1F051FDB00A76A39 /* LoLCloth.m in Sources */ = {isa = PBXBuildFile; fileRef = A050728D1F051FDB00A76A39 /* LoLCloth.m */; };
 		A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F4F1F01F42B00B802E6 /* BottomView.m */; };
 		A0B23F531F01F85500B802E6 /* LDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F521F01F85500B802E6 /* LDButton.m */; };
 		A0B23F561F02032100B802E6 /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B23F551F02032100B802E6 /* TopView.m */; };
@@ -79,10 +77,6 @@
 		A03221551F010AC0009C85D8 /* LDCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCell.m; sourceTree = "<group>"; };
 		A05072861F051F9900A76A39 /* Clothes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clothes.h; sourceTree = "<group>"; };
 		A05072871F051F9900A76A39 /* Clothes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clothes.m; sourceTree = "<group>"; };
-		A05072891F051FBB00A76A39 /* DaotaCloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaotaCloth.h; sourceTree = "<group>"; };
-		A050728A1F051FBB00A76A39 /* DaotaCloth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaotaCloth.m; sourceTree = "<group>"; };
-		A050728C1F051FDB00A76A39 /* LoLCloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLCloth.h; sourceTree = "<group>"; };
-		A050728D1F051FDB00A76A39 /* LoLCloth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLCloth.m; sourceTree = "<group>"; };
 		A0B23F4E1F01F42B00B802E6 /* BottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomView.h; sourceTree = "<group>"; };
 		A0B23F4F1F01F42B00B802E6 /* BottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomView.m; sourceTree = "<group>"; };
 		A0B23F511F01F85500B802E6 /* LDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDButton.h; sourceTree = "<group>"; };
@@ -232,10 +226,6 @@
 			children = (
 				A05072861F051F9900A76A39 /* Clothes.h */,
 				A05072871F051F9900A76A39 /* Clothes.m */,
-				A05072891F051FBB00A76A39 /* DaotaCloth.h */,
-				A050728A1F051FBB00A76A39 /* DaotaCloth.m */,
-				A050728C1F051FDB00A76A39 /* LoLCloth.h */,
-				A050728D1F051FDB00A76A39 /* LoLCloth.m */,
 			);
 			name = "工厂模式";
 			sourceTree = "<group>";
@@ -538,7 +528,6 @@
 				A03221231F00E38A009C85D8 /* ViewController.mm in Sources */,
 				A0DB1F2D1F04D92C00FE0384 /* model.m in Sources */,
 				A0B23F531F01F85500B802E6 /* LDButton.m in Sources */,
-				A050728E1F051FDB00A76A39 /* LoLCloth.m in Sources */,
 				A0B23F561F02032100B802E6 /* TopView.m in Sources */,
 				A03221201F00E38A009C85D8 /* AppDelegate.m in Sources */,
 				A03221531F00F476009C85D8 /* MyDrawView.m in Sources */,
@@ -546,7 +535,6 @@
 				A03221561F010AC0009C85D8 /* LDCell.m in Sources */,
 				A0DB1F301F04DE9700FE0384 /* DownView.m in Sources */,
 				A032211D1F00E38A009C85D8 /* main.m in Sources */,
-				A050728B1F051FBB00A76A39 /* DaotaCloth.m in Sources */,
 				A05072881F051F9900A76A39 /* Clothes.m in Sources */,
 				A0B23F501F01F42B00B802E6 /* BottomView.m in Sources */,
 				A0B23F5C1F02362A00B802E6 /* UpView.m in Sources */,
