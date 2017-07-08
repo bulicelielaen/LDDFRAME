@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class TopView,BottomView,model;
+
+@class TopView,BottomView;
+
 //所有的点击事件全用block回调
 typedef void(^sumBtnClick)(NSString * word);
 typedef void(^synchronizeBtnClick)(NSString * word);
