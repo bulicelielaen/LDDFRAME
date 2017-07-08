@@ -24,4 +24,7 @@ typedef void(^synchronizeBtnClick)(NSString * word);
 //所有点击事件 集中写在一个方法里 供Controller处理
 - (void)inAWord:(sumBtnClick)sumBtn synchronize:(synchronizeBtnClick)synchronizeBtn;
 
+- (void)topViewClickEvent:(int)i collectionView:(UICollectionView *)collectionV;
+- (void)bottomViewClickEvent:(UIViewController*)Vc;
+- (void)theCountdownEvent;
 @end
