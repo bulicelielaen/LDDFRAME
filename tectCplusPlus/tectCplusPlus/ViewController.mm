@@ -16,6 +16,8 @@
 #import "TopView.h"
 #import "model.h"
 #import "MJExtension.h"
+#import "NSObject+Extension.h"
+#import "ComputerManager.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -71,6 +73,12 @@ static int i = 0;
     [self buildingMainFrame];
     
     
+#if 1
+    [NSObject addA:^(ComputerManager *manager) {
+        manager.addA(0).addA(0);
+    }];
+    
+#endif
 }
 //搭建主框架
 - (void)buildingMainFrame
